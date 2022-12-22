@@ -1,0 +1,64 @@
+
+ body {
+  font-family: 'Poppins';
+}
+table {
+  text-align: center;
+  border-collapse: collapse;
+  border-color: #000;
+}
+
+th,
+td {
+  padding: 10px 5px;
+  position: relative;
+}
+thead,
+tfoot {
+  background-color: #222;
+}
+
+thead th,
+tfoot th {
+  color: #f5f5f5;
+}
+
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+
+.input-group {
+  /* background-color: hsl(189, 77%, 81%); */
+  padding: 10px;
+  margin: 30px 0;
+  border-radius: 5px;
+  width: 100%;
+  /* box-shadow: 0px 10px 0 0 hsl(189, 70%, 68%),
+    10px 10px 0px 0 hsl(189, 70%, 68%); */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 10px;
+  color: hsl(189, 80%, 38%);
+  font-weight: 600;
+}
+
+.resizer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    /* background: rgba(0, 0, 0, 0.5);*/
+    background-color: white;
+    cursor: col-resize;
+    user-select: none;
+    touch-action: none;
+  }
+  
+  .resizer.isResizing {
+    background-color: white;
+    opacity: 1;
+  } 
